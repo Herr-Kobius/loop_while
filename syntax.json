@@ -1,0 +1,18 @@
+{
+    "keywords":{
+        "loop": "LOOP",
+        "while":"WHILE",
+        "do": "DO",
+        "end":"END"
+    },
+    "symbols":{
+        "eol": ";",
+        "assignment": ":=",
+        "add": "+",
+        "sub": "-",
+        "ueq": "!="
+    },
+    "variables":{
+        "prefix": "x"
+    }
+}
