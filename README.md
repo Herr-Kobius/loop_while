@@ -29,9 +29,10 @@ The LOOP language has two types of statements:
 
 A program, denoted as $prog$, will adhere to the following syntax:
 
-$$
+```math 
 \begin{align}
-   prog &\to [stat]^{*}\\   
+
+prog &\to [stat]^{*}Y\\
    stat &\to assi|loop\\ 
    assi &\to var:=var\pm num;\\\
    loop &\to \text{LOOP}\:var\:\text{DO}\:stat\:\text{END}\\
@@ -39,7 +40,9 @@ $$
    num  &\to [0..9]^{*}\\
    var\_{prefix} &\to a..z
 \end{align}
-$$
+
+   ```
+   
 
 A program will receive a list of natural numbers as inputs.
 If a variable $var$ is not initialized, it will be assigned the value $0$.
@@ -55,12 +58,12 @@ WHILE-Programs are LOOP-Programs that also have the option of one additional ins
 - **WHILE:** A loop with a condition
 
 The syntax for the while loop is as follows:
-$$
+```math
 \begin{align}
     stat &\to assi|loop|while\\ 
     while &\to \text{WHILE }\:var!=0\:\text{ DO}\:stat\:\text{END}
 \end{align}
-$$
+```
 
 A WHILE-Program requires the ending *".while"*, the ending *".loop"* is sufficient for a LOOP-Program.
 ## References 
